@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-something" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0px;
+
+            font-family: Arial;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+
+        }
+      
+
+        .navbar {
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0px;
+
+
+
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            background-image: url("/amazon_logo.png");
+            height: 50px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-address {
+            display: flex;
+            align-items: center;
+            color: white;
+            margin-right: 100px;
+            padding: 10px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 4px;
+            padding: 2px;
+
+        }
+
+        .search-select {
+            margin-right: 5px;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            width: 400px;
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            height: 10px;
+
+
+        }
+
+        .search-icon {
+            color: grey;
+            margin-left: 5px;
+
+        }
+
+        .search button {
+            border: none;
+            color: orange;
+            border-radius: 10px;
+
+
+
+        }
+
+        span {
+            font-size: 15px;
+            margin-left: 80px;
+
+        }
+
+        .nav-second {
+            font-size: 16px;
+            margin-left: 100px;
+            font-weight: 700px;
+
+
+
+
+        }
+
+        .border:hover {
+            border: 1px solid white;
+
+        }
+
+        #margin {
+            margin-right: 550px;
+        }
+
+        .panel {
+            height: 40px;
+            background-color: #222f3d;
+            display: flex;
+
+            color: white;
+        }
+
+        .panel-ops a {
+            display: inline-block;
+            margin-left: 40px;
+            font-size: 15px;
+            margin-left: 50px;
+        }
+
+        .nav-signin a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+
+
+        .hero-section {
+            background-image: url("/hero_image.jpg");
+            height: 400px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 25px;
+
+
+
+        }
+
+        .hero-msg {
+            background-color: white;
+            color: black;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 25px;
+            font-size: 0.85rem;
+            width: 80%;
+
+
+        }
+
+        .amazon:hover {
+            color: green;
+        }
+
+        .shop-section {
+            display: flex;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 400px;
+            width: 25%;
+            float: right;
+            background-color: #e2e7e6;
+            padding: 15px;
+            border: none;
+
+
+        }
+
+        .box-img {
+            background-image: url("/box2_image.jpg");
+            height: 300px;
+
+
+        }
+
+        #box2-img {
+            background-image: url("/Beauty\ kicks.jpg");
+            height: 300px;
+            padding: 15px;
+
+
+
+        }
+
+        .text-color {
+            /*See more text-color*/
+            color: #007185;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .text-color:hover {
+            color: black;
+        }
+
+        .box3-img {
+            background-image: url("/Furniture.jpg");
+            height: 300px;
+            padding: 15px;
+        }
+
+        .box4-img {
+            background-image: url("/fashion2.jpg");
+            height: 300px;
+            padding: 15px;
+            background-repeat: no-repeat;
+            width: 500px;
+        }
+
+        .next-box {
+
+            border: 2px solid black;
+            height: 400px;
+            width: 25%;
+            float: right;
+            background-color: #e2e7e6;
+            padding: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            border: none;
+
+
+        }
+
+        .mini-box {
+            border: 3px solid black;
+            height: 150px;
+            width: 150px;
+            float: right;
+            Margin: 7px;
+            border-radius: 10px;
+            border: none;
+
+
+
+        }
+
+        .mini-box1 {
+            background-image: url("/Headsets.jpg");
+            height: 145px;
+            border-radius: 10px;
+
+
+        }
+
+        .mini-box2 {
+            background-image: url("/keyboards.jpg");
+            height: 145px;
+            border-radius: 10px;
+
+        }
+
+        .mini-box3 {
+            background-image: url("/computer\ mice.jpg");
+            height: 145px;
+            border-radius: 10px;
+
+        }
+
+        .mini-box4 {
+            background-image: url("/chairs.jpg");
+            height: 145px;
+            border-radius: 10px;
+
+        }
+
+        .mini-box5 {
+            background-image: url("/Electronics\ 1.jpg");
+            height: 300px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background-repeat: no-repeat;
+        }
+
+        .mini-box6 {
+            background-image: url("/strip\ lights.jpg");
+            height: 300px;
+
+            margin: 10px;
+
+            border-radius: 10px;
+            background-repeat: no-repeat;
+        }
+
+        .mini-box7 {
+            background-image: url("/home\ refresh\ ideas.jpg");
+            height: 400px;
+
+            margin: 10px;
+
+            border-radius: 10px;
+            background-repeat: no-repeat;
+        }
+
+        .box10 {
+            border: 100px solid black;
+            height: 100px;
+            width: 600px;
+
+        }
+
+        #long-box {
+            width: 1500px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+
+
+
+        }
+
+        .long-box1 {
+            background-image: url("/home\ decor\ 1.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        .long-box2 {
+            background-image: url("/home\ decor\ 2.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin: 10px;
+
+
+        }
+
+        .long-box3 {
+            background-image: url("/home\ decor\ 3.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        .long-box4 {
+            background-image: url("/home\ decor\ 4.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin: 10px;
+        }
+
+        .long-box5 {
+            background-image: url("/home\ decor7.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin-right: 80px;
+            margin-top: 8px;
+        }
+
+        .mobile-box {
+            border: 2px solid black;
+            background-color: #e2e7e6;
+            margin-top: 400px;
+            border: none;
+        }
+
+        .mobile1 {
+
+
+            background-image: url("/mobile1.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+            margin-right: 80px;
+            margin-top: 8px;
+
+            margin: 80px;
+            padding: 10px;
+
+
+        }
+
+        .mobile2 {
+            background-image: url("/mobile1.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+
+            margin-top: 8px;
+
+            margin: 80px;
+            padding: 10px;
+        }
+
+        .mobile3 {
+            background-image: url("/mobile2.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+
+            margin-top: 8px;
+
+            margin: 80px;
+            padding: 10px;
+        }
+
+        .mobile4 {
+            background-image: url("/mobile3.jpg");
+            height: 240px;
+            width: 250px;
+            background-repeat: no-repeat;
+
+            margin-top: 8px;
+
+            margin: 80px;
+            padding: 10px;
+        }
+
+        .sign-in-btn {
+
+            height: 30px;
+            padding: 10px 20px;
+            background-color: #f08804;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 300px;
+
+
+
+        }
+
+
+
+
+        .home-decor {
+            border: 2px solid black;
+            height: 400px;
+            width: 25%;
+            float: right;
+            background-color: #e2e7e6;
+            padding: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            border: none;
+            width: 1500px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 100px;
+            border: 2px;
+
+        }
+
+        .footer {
+            border: 2px solid;
+            height: 800px;
+            width: 400px;
+        }
+
+        .boxx {
+
+            border: 2px;
+            border-style: solid;
+            border-color: black;
+            height: 400px;
+            width: 1500px;
+            margin-top: 50px;
+            background-color: #e2e7e6;
+            border: none;
+            display: flex
+        }
+
+        .boxx1 {
+            height: 240px;
+            width: 250px;
+            border: 2px solid black;
+            margin-top: 60px;
+            margin: 50px;
+            background-image: url("/Home\ improvement.jpg");
+            border: none;
+            border-radius: 10px;
+
+
+
+        }
+
+        .boxx2 {
+            height: 240px;
+            width: 250px;
+            border: 2px solid black;
+            margin-top: 100px;
+            margin: 50px;
+            background-image: url("/pet\ supplies.jpg");
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        .boxx3 {
+            height: 240px;
+            width: 250px;
+            border: 2px solid black;
+            margin-top: 100px;
+            margin: 50px;
+            background-image: url("/Kindle\ E\ readers.jpg");
+            border: none;
+            border-radius: 10px;
+        }
+
+        .boxx4 {
+            height: 240px;
+            width: 250px;
+            border: 2px solid black;
+            margin-top: 100px;
+            margin: 50px;
+            background-image: url("/Fitness\ needs.jpg");
+            border: none;
+            border-radius: 10px;
+        }
+
+
+        .footer-box {
+            border: 0.5px solid black;
+            height: 400px;
+            width: 1500px;
+            background-color: #283044;
+            border: none;
+
+
+
+        }
+
+        /*The box above footer box*/
+        .footer-boxx {
+            border: 1px solid #0f1111;
+            height: 40px;
+            width: 1500px;
+            margin-top: 50px;
+            background-color: #283044;
+            border: none;
+        }
+
+        .ending-box {
+            border: 0.5px solid black;
+            height: 150px;
+            width: 1500px;
+
+
+
+        }
+
+        h5 {
+            margin: 100px;
+            margin-left: 2px;
+
+        }
+
+        .end-box1 {
+            border: 2px solid black;
+            height: 50px;
+            width: 1500px;
+            margin-top: 30px;
+            background-color: #283044;
+
+
+
+        }
+
+        .end-box2 {
+            border: 2px solid black;
+            height: 350px;
+            width: 1500px;
+            background-color: #283044;
+            border: none;
+            overflow:hidden;
+        }
+
+        .end-box3 {
+            border: 2px solid black;
+            height: 300px;
+            width: 1500px;
+            background-color: #131A22;
+            border: none;
+        overflow:hidden;
+
+             
+
+
+        }
+
+        .footer-site {
+            margin-left: 100px;
+        }
+
+        .end-box2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            color: white;
+            border: none;
+            overflow:hidden;
+
+        }
+
+        .footer-column1 {
+            flex: 1;
+            color: #ffffff;
+
+
+        }
+
+        .footer-colum2 {
+            flex: 2;
+            margin-left: 130px;
+            justify-content: space-evenly;
+            color: #ffffff;
+        }
+
+        .footer-colum3 {
+            flex: 3;
+            color: #ffffff;
+
+        }
+
+        .footer-colum4 {
+            flex: 4;
+
+            color: #ffffff;
+            margin-left: 5000px;
+        }
+
+        .end-box4 {
+            border: 2px solid black;
+            height: 200px;
+            height: 150px;
+            width: 1500px;
+            background-color: #131A22;
+            overflow:hidden;   /*To make the last box element does not flow at the end page of website does not flow*/
+
+
+        }
+
+        .logo2 {
+            background-image: url("/amazon_logo.png");
+            height: 50px;
+            width: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 50px;
+            margin-right: 50px;
+            height: 3500px;
+            width: 150px;
+            margin-left: 500px;
+
+
+
+        }
+
+        .English-box {
+            border: 2px solid white;
+            height: 50px;
+            width: 140px;
+            margin-left: 200px;
+            margin-top: 20px;
+            color: white;
+            text-align: justify;
+            background-color: white;
+            width: 20px;
+            height: 20px;
+
+
+
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="nav-logo ">
+
+                <div class="logo border"></div>
+
+                <div class="nav-right">
+                    <div class="nav-address border">
+
+                        <p>Deliver to <b>India</b></p>
+
+                    </div>
+
+                    <div class="search">
+                        <select class="search-select">
+                            <option>ALL</option>
+                            <option>Amazon devices</option>
+                            <option>Alexa skills</option>
+                            <option>Amazon devices</option>
+                            <option>Amazon fashion</option>
+                            <option>Beauty</option>
+                            <option>Books</option>
+                            <option>Gift cards</option>
+                            <option>Home & Kitchen </option>
+                            <option>Amazon Pharmacy</option>
+                            <option>Clothing & Accessories</option>
+                            <option>Garden & outdoors</option>
+                            <option>Jwellery</option>
+                            <option>Amazon Fashion</option>
+                            <option>Luggage & Bags</option>
+                            <option>Apps & Games</option>
+                            <option>Appliances</option>
+                            <option>Luxury Beauty</option>
+                            <option>Shoes & Handbags</option>
+                            <option>Prime Video</option>
+                            <option>Office Products</option>
+                        </select>
+                        <center><input type="text" class="search-input" placeholder="Search Amazon"></center>
+                        <div class="search button">
+                            <button>
+                                <div class="search-icon">&#128269;</div>
+                            </button>
+                            <div class="nav-signin border">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nav-signin">
+                    <p><span>Hello,<a href="/Amazon signin page.html" target="_blank">signin</a></span></p>
+                    <p class="nav-second border"><b>Account & List</b></p>
+
+                </div>
+            </div>
+
+            <div class="nav-signin" id="margin">
+                <p><span>Returns</span></p>
+                <p class="nav-second border">& Orders</p>
+            </div>
+            <div class="nav-cart">
+                <p>Cart</p>
+                <i class="fa-light fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="panel border">
+            <div class="panel-all">
+                <i class="fa-regular fa-bars"></i>
+                ALL
+            </div>
+
+
+            <div class="panel-ops ">
+                <a href="#" style="color: inherit; text-decoration: none;" target="_blank">Today's deals</a>
+                <a href="#" style="color: inherit; text-decoration: none;" target="_blank">Customer service</a>
+                <a href="#" style="color: inherit; text-decoration: none;" target="_blank">Registery</a>
+                <a href="#" style="color: inherit; text-decoration: none;" target="_blank">Gift Card</a>
+                <a href="#" style="color: inherit; text-decoration: none;" target="-blank">Sell</a>
+
+
+            </div>
+        </div>
+
+        </div>
+    </header>
+    </header>
+
+    </header>
+    <div class="hero-section">
+        <div class="hero-msg">
+            <p>You are on Amazon.com.You can also Shop on Amazon India for millions of products with fast local delivery
+                Click here to go on <a class="amazon"
+                    href="https://www.amazon.in/?tag=msndeskstdin-21&ref=pd_sl_2jfo3cz39r_e&adgrpid=1326012680492748&hvadid=82876055418477&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=148650&hvtargid=kwd-82876733590663:loc-90&hydadcr=5624_2377286"
+                    target="_blank">amazon.in</a></p>
+        </div>
+    </div>
+
+    <div class="shop section">
+
+        <div class="box">
+            <h2>Health & Personal Care</h2>
+            <div class="box-img">
+
+            </div>
+            <div class="text-color">
+                <p>See more</p>
+            </div>
+
+
+
+        </div>
+        <div class="box">
+            <h2><b>Beauty picks</b></h2>
+            <div id="box2-img">
+
+            </div>
+            <div class="text-color">
+                <p>See more</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <p>
+            <h2>Accent Furniture</h2>
+            </p>
+            <div class="box3-img">
+
+            </div>
+            <div class="text-color">
+                <p>See more</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <p>
+            <h2>Fashion trends you like</h2>
+            </p>
+            <div class="box4-img">
+
+            </div>
+            <div class="text-color">
+                <p>See more</p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="next-box">
+        <h2>Gaming accessories</h2>
+        <div class="mini-box">
+            <div class="mini-box1">
+
+            </div>
+        </div>
+        <div class="mini-box">
+            <div class="mini-box2">
+
+            </div>
+        </div>
+        <div class="mini-box">
+            <div class="mini-box3">
+
+            </div>
+        </div>
+
+        <div class="mini-box">
+            <div class="mini-box4">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="next-box">
+        <h2>Electronics</h2>
+        <div class="mini-box5">
+        </div>
+
+    </div>
+    <div class="next-box">
+        <h2>Create with strip lights</h2>
+        <div class="mini-box6">
+            <div class="text-color"></div>
+        </div>
+    </div>
+    <div class="next-box">
+        <h2>Home refresh ideas</h2>
+        <div class="mini-box7"></div>
+
+    </div>
+
+    </div>
+    </div>
+    <div class="home-decor" id=long-box>
+        <div>
+            <h2>Home Decor Under $20</h2>
+            <div class="text-color">Shop now</div>
+        </div>
+        <div class="long-box6"></div>
+        <div class="long-box1"></div>
+
+        <div class="long-box2"></div>
+
+        <div class="long-box3"></div>
+        <div class="long-box7"></div>
+        <div class="long-box5"></div>
+
+    </div>
+    <div class="mobile-box" id="long-box">
+        <div>
+            <h2>Exciting Deals on Mobile Phones</h2>
+
+            <div class="text-color">Shop now</div>
+        </div>
+        <div class="mobile1"></div>
+        <div class="mobile2"></div>
+        <div class="mobile3"></div>
+        <div class="mobile4"></div>
+
+    </div>
+    <div class="boxx">
+        <div class="boxx1">
+
+        </div>
+
+
+        <div class="boxx2"></div>
+
+        <div class="boxx3"></div>
+
+        <div class="boxx4"></div>
+
+
+
+    </div>
+
+    </div>
+    <div class="ending-box">
+        <center>
+            <h5>View or edit your browsing historyAfter viewing product detail pages, look here to find an easy way to
+                navigate back to pages you are interested in.</h5>
+        </center>
+    </div>
+    <div class="end-box1">
+        <center>
+            <p style="color:white">Back to top</p>
+        </center>
+
+    </div>
+    </div>
+    <div class="end-box2">
+
+        <div class="footer-colum1">
+            <br>
+            <br>
+            <br>
+            <h3>Get to Know Us</h3>
+            <br>
+            <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </ul>
+        </div>
+        <div class="footer-colum2">
+            <br>
+            <br>
+            <br>
+            <h3>Connect with Us</h3>
+            <ul>
+                <br>
+
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+        <div class="footer-colum3">
+            <br>
+            <br>
+            <br>
+            <h3>Make Money with Us</h3>
+            <br>
+            <ul>
+                <li>Sell on Amazon</li>
+                <li>Sell under Amazon Accelerator</li>
+                <li>Protect and Build Your Brand</li>
+                <li>Amazon Global Selling</li>
+                <li>Become an Affiliate</li>
+                <li>Advertise Your Products</li>
+            </ul>
+        </div>
+        <div class="footer-column4">
+            <br>
+            <br>
+            <br>
+            <h3> Let Us Help You</h3>
+            <br>
+            <ul>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>100% Purchase Protection</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="end-box4">
+
+        <div class="nav-logo">
+            <div class="logo2">
+                <div class="English-box">
+                    <select>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                        <option>tamil</option>
+                        <option>Bengali</option>
+                        <option>Urdu</option>
+                        <option>Marathi</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+<div class="end-box3">
+
+</div>
+
+
+</body>
+
+</html>
